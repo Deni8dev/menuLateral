@@ -1,0 +1,92 @@
+body{
+	font-family: 'Slabo 27px', serif;
+	transition: 1s;
+}
+.oscuro{
+	background: #525055;
+	transition: 1s;
+}
+.menu{
+	list-style: none;
+	line-height: 42px;
+	margin: 2em auto;
+	/*outline: 1px solid red;*/
+	padding-left: 0;
+	width: 15em;
+}
+.menu a{
+	color: #ddd;
+	display: block;
+	width: 100%;
+	margin-left: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .9s;
+}
+.menu li{
+	box-shadow: 3px 0 rgba(255, 255, 255, .2) inset;
+	margin-bottom: 5px;
+	padding-left: 1.5px;
+	/*outline: 1px solid green;*/
+	--webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.menu li:hover{
+	box-shadow: 15em 0 rgba(255, 255, 255, .2) inset;
+}
+.menu li:hover a{
+	margin-left: 20px;
+}
+/*Posicion responsive menu*/
+nav{
+	top: 0;
+	background: rgba(0, 0, 0, .8);
+	box-sizing: border-box;
+	position: fixed;
+	padding-top: 2em;
+	left: -18em;
+	z-index: 20;
+	height: 100%;
+	padding-right: .15em;
+	transition: all .5s;
+}
+nav.mostrar{
+	left: 0;
+}
+.mostrar-nav{
+	position: fixed;
+	top: 2em;
+	left: 2em;
+	width: 30px;
+	height: 25px;
+	cursor: pointer;
+	z-index: 30;
+	background: url('icon-menu.png') no-repeat;
+}
+h1{
+	text-align: center;
+}
+article{
+	text-align: justify;
+}
+footer{
+	border-top: 1px solid #444;
+	margin-top: 50px;
+	text-align: right;
+}
+footer a{
+	text-decoration: none;
+	color: #999;
+	margin-top: 40px;
+	padding: 10px;
+}
+.wrapper{
+	box-sizing: border-box;
+	margin: auto;
+	max-width: 1200px;
+	width: 90%;
+}
+footer .copyright{
+	float: inherit;
+}
